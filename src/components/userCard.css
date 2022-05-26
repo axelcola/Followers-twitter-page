@@ -1,0 +1,16 @@
+.user-photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.user-card{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    justify-content: space-between;
+}
+.img-and-data{
+    display: flex;
+}
