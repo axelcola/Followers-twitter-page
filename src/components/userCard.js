@@ -11,7 +11,7 @@ export default function UserCard() {
           <div className="data">
             <h1>Axel</h1>
             <p>@axel</p>
-            <h2>descripción</h2>
+            <h2>descripción sobre lo efimero de la vida</h2>
           </div>
         </div>
         <div className="buttons">

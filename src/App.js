@@ -1,16 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
-import UserCard from "./components/userCard";
+import UserList from "./components/userList";
 
 function App() {
   return (
     <div className="App">
       <div className="users-section">
-        <UserCard />
-        <UserCard />
-        <UserCard />
-        <UserCard />
-        <UserCard />
+        <UserList />
       </div>
     </div>
   );

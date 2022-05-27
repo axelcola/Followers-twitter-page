@@ -1,17 +1,25 @@
-.user-photo{
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    object-fit: cover;
-
-}
 .user-card{
     display: flex;
     flex-direction: row;
-    width: 700px;
+    width: 600px;
     justify-content: space-between;
-    margin: 15px;
+    margin: 9px;
     align-items: center;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.user-card:hover{
+    background-color: #1c2732;
+    transition: 0.2s;
+
+}
+.user-photo{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .img-and-data{
     display: flex;
@@ -20,17 +28,26 @@
 }
 h1{
     font-size: 15px;
-    line-height: 8px;
+    line-height: 4px;
     color: #f7f9f9;
+    transition: 0.2s;
+
+}
+h1:hover{
+    text-decoration: underline;
+    transition: 0.2s;
+
 }
 h2{
     font-size: 15px;
-    line-height: 8px;
+    line-height: 4px;
     color: #f7f9f9;
+    font-weight: 500;
+
 }
 p{
     font-size: 15px;
-    line-height: 8px;
+    line-height: 4px;
     color:#8b98a5;
 }
 .data{
@@ -47,9 +64,13 @@ p{
     color:#15202b ;
     border: none;
     cursor: pointer;
+    transition: 0.2s;
+
 }
 .follow-button:hover{
     background-color: #d7dbdc;
+    transition: 0.2s;
+
 }
 .dots{
     width: 30px;
@@ -61,10 +82,14 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
+
 }
 .dots:hover{
     background-color: #1c3346;
     color:#1c5e8c ;
+    transition: 0.2s;
+
 }
 .buttons {
     display: flex;
