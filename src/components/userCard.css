@@ -1,6 +1,6 @@
 .user-photo{
-    width: 100px;
-    height: 100px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     object-fit: cover;
 
@@ -8,9 +8,65 @@
 .user-card{
     display: flex;
     flex-direction: row;
-    width: 1000px;
+    width: 700px;
     justify-content: space-between;
+    margin: 15px;
+    align-items: center;
 }
 .img-and-data{
     display: flex;
+    align-items: center;
+
+}
+h1{
+    font-size: 15px;
+    line-height: 8px;
+    color: #f7f9f9;
+}
+h2{
+    font-size: 15px;
+    line-height: 8px;
+    color: #f7f9f9;
+}
+p{
+    font-size: 15px;
+    line-height: 8px;
+    color:#8b98a5;
+}
+.data{
+    line-height: 1px;
+    text-align: left;
+    margin-left: 20px;
+}
+.follow-button{
+    width: 80px;
+    height: 35px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    color:#15202b ;
+    border: none;
+    cursor: pointer;
+}
+.follow-button:hover{
+    background-color: #d7dbdc;
+}
+.dots{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #8b98a5;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dots:hover{
+    background-color: #1c3346;
+    color:#1c5e8c ;
+}
+.buttons {
+    display: flex;
+    align-items: center;
 }

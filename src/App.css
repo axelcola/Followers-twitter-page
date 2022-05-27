@@ -1,7 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .users-section{
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }

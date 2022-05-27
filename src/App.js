@@ -5,8 +5,11 @@ import UserCard from "./components/userCard";
 function App() {
   return (
     <div className="App">
-      <h1>hola</h1>
       <div className="users-section">
+        <UserCard />
+        <UserCard />
+        <UserCard />
+        <UserCard />
         <UserCard />
       </div>
     </div>
