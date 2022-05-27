@@ -1,0 +1,65 @@
+.switch-folow-list{
+    display: flex;
+}
+.follow{
+    width: 50%;
+    height: 45px;
+    color: #f7f9f9;
+    border: none;
+    border-bottom: solid;
+    border-width: 1.3px;
+    border-color: #38444d;
+    font-weight: 700;
+    background-color: #15202B;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.follow:hover{ 
+    background-color: #2d3741;
+    transition: 0.2s;
+
+}
+h2{
+    font-size: 15px;
+    line-height: 4px;
+    color: #f7f9f9;
+    font-weight: 500;
+}
+p{
+    font-size: 15px;
+    line-height: 4px;
+    color:#8b98a5;
+}
+.head-box{
+    text-align: left;
+    
+}
+.user{
+    margin: 20px;
+}
+.user-back-box{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.back-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #eff3f4;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #15202B;
+    transition: 0.2s;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.back-button:hover{
+    background-color: #2d3741;
+    transition: 0.2s;
+}
