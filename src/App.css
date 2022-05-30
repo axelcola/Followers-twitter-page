@@ -8,6 +8,14 @@
   flex-direction: column;
   justify-content: center;
   border:solid;
+  border-bottom: none;
   border-width: 1.3px;
   border-color: #38444d;
+}
+.head{
+  position: fixed;
+  width: 640px;
+  top: 0%;
+  backdrop-filter: blur(10px);
+
 }

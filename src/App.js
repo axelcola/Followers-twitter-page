@@ -5,7 +5,9 @@ function App() {
   return (
     <div className="App">
       <div className="users-section">
-        <Head />
+        <div className="head">
+          <Head />
+        </div>
         <UserList />
       </div>
     </div>

@@ -3,7 +3,7 @@
 }
 .follow{
     width: 50%;
-    height: 45px;
+    height: 55px;
     color: #f7f9f9;
     border: none;
     border-bottom: solid;
@@ -33,8 +33,11 @@ p{
 }
 .head-box{
     text-align: left;
+    background-color: #15202B;
+    opacity: 80%;
     
 }
+
 .user{
     margin: 20px;
 }

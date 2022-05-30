@@ -19,6 +19,13 @@
     height: 52px;
     border-radius: 50%;
     object-fit: cover;
+    transition: 0.2s;
+
+}
+.user-photo:hover{
+    opacity: 85%;
+    transition: 0.2s;
+
 }
 .img-and-data{
     display: flex;

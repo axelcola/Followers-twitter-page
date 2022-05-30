@@ -13,6 +13,14 @@ const UserList = () => {
       <UserCard />
       <UserCard />
       <UserCard />
+      <UserCard />
+      <UserCard />
+      <UserCard />
+      <UserCard />
+      <UserCard />
+      <UserCard />
+      <UserCard />
+      <UserCard />
     </>
   );
 };
