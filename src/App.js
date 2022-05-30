@@ -1,14 +1,16 @@
 import "./App.css";
-import UserList from "./components/userList";
-import Head from "./components/Head";
+import UserSection from "./userSection";
+import SearchSection from "./components/searchSection";
+
 function App() {
   return (
     <div className="App">
+      <div className="nav-section"></div>
       <div className="users-section">
-        <div className="head">
-          <Head />
-        </div>
-        <UserList />
+        <UserSection />
+      </div>
+      <div className="search-section">
+        <SearchSection />
       </div>
     </div>
   );

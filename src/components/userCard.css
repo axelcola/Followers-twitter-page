@@ -32,14 +32,14 @@
     align-items: center;
 
 }
-h1{
+.user-name{
     font-size: 15px;
     line-height: 4px;
     color: #f7f9f9;
     transition: 0.2s;
 
 }
-h1:hover{
+.user-name:hover{
     text-decoration: underline;
     transition: 0.2s;
 
@@ -79,11 +79,12 @@ p{
 
 }
 .dots{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     color: #8b98a5;
     margin: 5px;
+    margin-right: -10px;
     cursor: pointer;
     display: flex;
     justify-content: center;

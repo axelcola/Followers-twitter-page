@@ -9,10 +9,11 @@
     border-bottom: solid;
     border-width: 1.3px;
     border-color: #38444d;
-    font-weight: 700;
+    font-weight: 600;
     background-color: #15202B;
     cursor: pointer;
     transition: 0.2s;
+    font-size: 16px;
 
 }
 .follow:hover{ 
@@ -37,7 +38,17 @@ p{
     opacity: 80%;
     
 }
+.name{
+    font-size: 20px;
+    color: #ffffff !important ;
+    line-height: 15px;
+    text-decoration: none;
 
+}
+.user-name{
+    font-size: 13px;
+    
+}
 .user{
     margin: 20px;
 }

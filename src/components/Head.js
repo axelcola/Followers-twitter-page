@@ -9,13 +9,13 @@ const Head = () => {
           <HiOutlineArrowSmLeft size={23} />
         </button>
         <div className="user">
-          <h1>Aacsel</h1>
-          <p>@Aacsell</p>
+          <h1 className="name">Aacsel</h1>
+          <p className="user-name">@Aacsell</p>
         </div>
       </div>
       <div className="switch-folow-list">
-        <button className="follow">Followers</button>
-        <button className="follow">Following</button>
+        <button className="follow followers">Followers</button>
+        <button className="follow following">Following</button>
       </div>
     </div>
   );

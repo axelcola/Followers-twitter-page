@@ -4,6 +4,9 @@
   justify-content: center;
 }
 .users-section{
+  position: inherit;
+  left: 0%;  
+  right: 0%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,6 +14,20 @@
   border-bottom: none;
   border-width: 1.3px;
   border-color: #38444d;
+}
+.search-section{
+  width: 300px;
+  height: 300px;
+
+}
+.nav-section{
+  border: solid;
+  width: 300px;
+  height: 300px;
+
+}
+.list{
+  margin-top: 110px;
 }
 .head{
   position: fixed;
