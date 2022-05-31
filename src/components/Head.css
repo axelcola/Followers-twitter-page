@@ -6,9 +6,7 @@
     height: 55px;
     color: #f7f9f9;
     border: none;
-    border-bottom: solid;
-    border-width: 1px;
-    border-color: #38444d;
+    border-bottom: solid 1.5px #38444d;
     font-weight: 600;
     background-color: #15202B;
     cursor: pointer;
