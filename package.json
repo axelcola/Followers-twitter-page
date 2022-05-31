@@ -2,7 +2,7 @@
   "name": "twitter-userpage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://axelcola.github.io/sticky-notes-on-react/",
+  "homepage": "https://axelcola.github.io/Followers-twitter-page/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
