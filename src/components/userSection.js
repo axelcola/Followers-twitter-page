@@ -1,5 +1,5 @@
-import Head from "./components/Head";
-import UserList from "./components/userList";
+import Head from "./Head";
+import UserList from "./userList";
 export default function UserSection() {
   return (
     <>

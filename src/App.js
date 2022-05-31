@@ -1,5 +1,5 @@
 import "./App.css";
-import UserSection from "./userSection";
+import UserSection from "./components/userSection";
 import SearchSection from "./components/searchSection";
 import NavSection from "./components/navSection";
 
