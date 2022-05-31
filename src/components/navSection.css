@@ -1,0 +1,58 @@
+.logo{
+    color: white;
+    margin-top: 20px
+}
+.nav-button{
+    color: white;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+.nav-button:hover{
+    background-color: #2d3741;
+    transition: 0.2s;
+
+    
+}
+.icon{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.button-text{
+    font-weight: 400;
+    font-size: 21px;
+    margin-top: 10px;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.nav-button.notifications{
+    width: 200px;
+}
+.nav-button.home{
+    width: 140px;
+}
+.nav-button.explore{
+    width: 150px;
+}
+.nav-button.messages{
+    width: 170px;
+}
+.nav-button.bookmarks{
+    width: 185px;
+}
+.nav-button.lists{
+    width: 120px;
+}
+.nav-button.more{
+    width: 130px;
+}

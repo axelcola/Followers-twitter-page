@@ -1,11 +1,14 @@
 import "./App.css";
 import UserSection from "./userSection";
 import SearchSection from "./components/searchSection";
+import NavSection from "./components/navSection";
 
 function App() {
   return (
     <div className="App">
-      <div className="nav-section"></div>
+      <div className="nav-section">
+        <NavSection />
+      </div>
       <div className="users-section">
         <UserSection />
       </div>
