@@ -1,12 +1,36 @@
 .logo{
     color: white;
     margin-top: 20px;
-    margin-left: 10px
+    width: 50px;
+    height: 50px ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius:50%;
+    transition: 0.2s;
+
 }
+.logo:hover{
+    background-color:#162d40;
+    transition: 0.2s;
+
+
+}
+.box{
+    width: 250px;
+    height: 60px;
+    opacity: 50%;
+    position: absolute;
+}
+.box:hover .nav-button{
+    background-color: #2d3741;
+    transition: 0.2s;
+
+}
+
 .nav-button{
     color: white;
     margin-top: 10px;
-    width: 150px;
     height: 50px;
     border-radius: 50px;
     justify-content: left;
@@ -40,20 +64,44 @@
 .nav-button.lists{
     width: 120px;
 }
+.nav-button.profile{
+    width: 130px;
+}
 .nav-button.more{
     width: 130px;
 }
 .icon{
-    margin-left: 12px;
+    margin-left: 15px;
     margin-right: 12px;
+    margin-top: 24px;
 }
 .button-text{
     font-weight: 400;
     font-size: 21px;
     margin-top: 10px;
 }
-.section{
+.nav-section{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    cursor: pointer;
+}
+.new-tweet-button{
+    background-color: #7856FF;
+    color: white;
+    width: 210px;
+    font-weight: 500;
+    font-size: 9px;
+    height: 45px;
+    margin-top: 20px;
+    border: solid #7856FF;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new-tweet-button:hover{
+    background-color: #6c4de6;
+    border: solid #6c4de6;
+
 }
