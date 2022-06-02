@@ -36,13 +36,29 @@
     font-size: 15px;
     line-height: 4px;
     color: #f7f9f9;
-    transition: 0.2s;
-
 }
 .user-name:hover{
     text-decoration: underline;
-    transition: 0.2s;
 
+}
+.pop-user{
+    display:none;
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: solid;
+    transition-delay: 2s;
+    opacity: 0;
+}
+.user-name:hover + .pop-user{
+    transition-delay: 2s;
+    display: block;
+    opacity: 1;
+
+}
+.pop-user:hover {
+    display: block;
 }
 h2{
     font-size: 15px;

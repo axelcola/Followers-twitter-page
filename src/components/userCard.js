@@ -10,6 +10,7 @@ export default function UserCard() {
           <img src={img} alt="user-img" className="user-photo"></img>
           <div className="data">
             <h1 className="user-name">Axel</h1>
+            <div className="pop-user"></div>
             <p>@axel</p>
             <h2>descripción sobre lo efimero de la vida</h2>
           </div>
