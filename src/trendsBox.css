@@ -1,0 +1,42 @@
+.trends-box{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    background-color: #1f2833;
+
+}
+.trend-title{
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+.title-box{
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.showmore-trend{
+    border-radius: 0 0 15px 15px;
+    height: 55px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.showmore-trend h3{
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #7856ff;
+
+}
+
+.showmore-trend:hover{
+    background-color: #252e38;
+    transition: 0.2s;
+
+}
