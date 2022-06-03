@@ -13,7 +13,7 @@ export default function PopUser() {
       <div className="pop-name-user-name">
         <h1>Axelcola </h1>
         <p>@axelcola</p>
-        <h2>Descripción sobre lo efimero de la vida</h2>
+        <h2> Lorem ipsum dolor sit amet consectetur.</h2>
       </div>
       <div className="numbers-follow">
         <div className="pop-numbers following">

@@ -13,7 +13,7 @@ export default function SingleTrend() {
         </div>
       </div>
       <div className="trend-name">
-        <h3>Paraguay</h3>
+        <h3>Uruguay</h3>
       </div>
       <div className="number-tweets">
         <p>15.32K Tweets</p>

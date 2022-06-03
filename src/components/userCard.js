@@ -43,7 +43,7 @@ export default function UserCard() {
               Axel {state.likeList}
             </h1>
             <p>@axel</p>
-            <h2>descripción sobre lo efimero de la vida</h2>
+            <h2> Lorem ipsum dolor sit amet consectetur.</h2>
           </div>
         </div>
         <div className="buttons">
