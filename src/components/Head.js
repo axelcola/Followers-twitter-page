@@ -14,8 +14,12 @@ const Head = () => {
         </div>
       </div>
       <div className="switch-folow-list">
-        <button className="follow followers">Followers</button>
-        <button className="follow following">Following</button>
+        <button className="follow followers">
+          Followers<div className="selected ok"></div>
+        </button>
+        <button className="follow following">
+          Following <div className="selected"></div>
+        </button>
       </div>
     </div>
   );

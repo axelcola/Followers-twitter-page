@@ -1,12 +1,15 @@
 .switch-folow-list{
     display: flex;
+    border-bottom: solid 1.5px #38444d;
 }
 .follow{
     width: 50%;
     height: 55px;
     color: #f7f9f9;
     border: none;
-    border-bottom: solid 1.5px #38444d;
+    z-index: 1000;
+    width: 100%;
+    z-index: 1000;
     font-weight: 600;
     background-color: #15202B;
     cursor: pointer;
@@ -17,6 +20,18 @@
 .follow:hover{ 
     background-color: #2d3741;
     transition: 0.2s;
+
+}
+.selected{
+    width: 85px;
+    height: 5px;
+    position: relative;
+    bottom: -16px;
+    border-radius: 10px;
+    left: 113px;
+}
+.selected.ok{
+    background-color: #7856ff;
 
 }
 h2{
