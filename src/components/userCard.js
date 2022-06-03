@@ -1,7 +1,7 @@
 import img from "./IMG_2441.jpeg";
 import "./userCard.css";
 import { BsThreeDots } from "react-icons/bs";
-import { useState, handleLeave, handleHover } from "react";
+import { useState } from "react";
 import FollowButton from "./follow-button";
 import PopUser from "./pop-user";
 
@@ -12,16 +12,14 @@ export default function UserCard() {
   const renderLikeList = () => {
     return <PopUser />;
   };
-  handleLeave = () => {
+  const handleLeave = () => {
     hover = false;
     setTimeout(function () {
       return setState({ likeList: "" });
     }, 700);
-    console.log(hover);
   };
-  handleHover = () => {
+  const handleHover = () => {
     hover = true;
-    console.log(hover);
     setTimeout(function () {
       if (hover) {
         return setState({ likeList: renderLikeList() });
