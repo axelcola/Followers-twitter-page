@@ -1,0 +1,61 @@
+.pop-user{
+    position: absolute;
+    min-width: 320px;
+    border-radius: 20px;
+    background-color: #15202b;
+    margin-top: 20px;
+    margin-left: -50px;
+    box-shadow:0 0 20px 3px rgba(255, 255, 255, 0.08);
+    cursor: default;
+}
+.pop-user h1{
+    font-size: 20px;
+    cursor: pointer;
+}
+.pop-photo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10px;
+}
+.user-photo.pop{
+    margin: 20px
+}
+.f-button{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.pop-name-user-name{
+    margin-bottom: 20px;
+}
+.pop-name-user-name h1{
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+}
+.pop-name-user-name p{
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 29px;
+    font-weight: 400;
+}
+.pop-name-user-name h2{
+    color: #f7f9f9;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.numbers-follow{
+    display: flex;
+    justify-content: left;
+}
+.pop-numbers{
+    color: #57646f;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    
+}
+.pop-numbers strong{
+    color: white;
+    font-weight: 500;
+}

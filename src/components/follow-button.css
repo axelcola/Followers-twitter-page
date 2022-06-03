@@ -1,0 +1,17 @@
+.follow-button{
+    width: 80px;
+    height: 35px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    color:#15202b ;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.follow-button:hover{
+    background-color: #d7dbdc;
+    transition: 0.2s;
+
+}

@@ -22,6 +22,13 @@
     transition: 0.2s;
 
 }
+.user-photo.medium{
+    width: 74px;
+    height: 74px;
+    object-fit: cover;
+    transition: 0.2s;
+
+}
 .user-photo:hover{
     opacity: 85%;
     transition: 0.2s;
@@ -41,26 +48,7 @@
     text-decoration: underline;
 
 }
-.pop-user{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background-color: aqua;
-}
-/* .user-name:hover + .pop-user{
-    display: block;
-    transition-delay: 2s;
-    background-color: blue;
-    transition-delay: 1s;
-    opacity: 1;
-}
-.pop-user:hover {
-    display: block;
-    opacity: 1;
-    background-color: blue;
 
-
-} */
 h2{
     font-size: 15px;
     line-height: 4px;
@@ -78,23 +66,7 @@ p{
     text-align: left;
     margin-left: 20px;
 }
-.follow-button{
-    width: 80px;
-    height: 35px;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 700;
-    color:#15202b ;
-    border: none;
-    cursor: pointer;
-    transition: 0.2s;
 
-}
-.follow-button:hover{
-    background-color: #d7dbdc;
-    transition: 0.2s;
-
-}
 .dots{
     width: 35px;
     height: 35px;

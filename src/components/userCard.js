@@ -1,20 +1,32 @@
 import img from "./IMG_2441.jpeg";
 import "./userCard.css";
 import { BsThreeDots } from "react-icons/bs";
-import { useState, renderLikeList, handleLeave, handleHover } from "react";
+import { useState, handleLeave, handleHover } from "react";
+import FollowButton from "./follow-button";
+import PopUser from "./pop-user";
 
 export default function UserCard() {
   const [state, setState] = useState({ likeList: "" });
+  let hover = false;
 
-  renderLikeList = () => {
-    return <div className="pop-user">Likes to be rendered specifically</div>;
+  const renderLikeList = () => {
+    return <PopUser />;
   };
   handleLeave = () => {
-    return setState({ likeList: "" });
+    hover = false;
+    setTimeout(function () {
+      return setState({ likeList: "" });
+    }, 700);
+    console.log(hover);
   };
   handleHover = () => {
-    console.log("hola");
-    return setState({ likeList: renderLikeList() });
+    hover = true;
+    console.log(hover);
+    setTimeout(function () {
+      if (hover) {
+        return setState({ likeList: renderLikeList() });
+      }
+    }, 700);
   };
 
   return (
@@ -35,7 +47,7 @@ export default function UserCard() {
           </div>
         </div>
         <div className="buttons">
-          <button className="follow-button">Follow</button>
+          <FollowButton />
           <div className="dots">
             <BsThreeDots />
           </div>
