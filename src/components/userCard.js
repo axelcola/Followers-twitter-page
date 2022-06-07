@@ -1,16 +1,22 @@
-import img from "./IMG_2441.jpeg";
 import "./userCard.css";
 import { BsThreeDots } from "react-icons/bs";
 import { useState } from "react";
 import FollowButton from "./follow-button";
 import PopUser from "./pop-user";
 
-export default function UserCard() {
+export default function UserCard(props) {
   const [state, setState] = useState({ likeList: "" });
   let hover = false;
 
   const renderLikeList = () => {
-    return <PopUser />;
+    return (
+      <PopUser
+        img={props.img}
+        first={props.first}
+        last={props.last}
+        description={props.description}
+      />
+    );
   };
   const handleLeave = () => {
     hover = false;
@@ -31,17 +37,21 @@ export default function UserCard() {
     <>
       <div className="user-card">
         <div className="img-and-data">
-          <img src={img} alt="user-img" className="user-photo"></img>
+          <img src={props.img} alt="user-img" className="user-photo"></img>
           <div className="data">
             <h1
               className="user-name"
               onMouseOver={handleHover}
               onMouseLeave={handleLeave}
             >
-              Axel {state.likeList}
+              {props.first} {props.last}
+              {state.likeList}
             </h1>
-            <p>@axel</p>
-            <h2> Lorem ipsum dolor sit amet consectetur.</h2>
+            <p>
+              @{props.first}
+              {props.last}
+            </p>
+            <h2>{props.description}</h2>
           </div>
         </div>
         <div className="buttons">
