@@ -9,6 +9,11 @@
     transition: 0.2s;
 
 }
+@media (max-width:800px) {
+    .user-card{
+        width: fit-content;
+    }
+}
 .user-card:hover{
     background-color: #1c2732;
     transition: 0.2s;

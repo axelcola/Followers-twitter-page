@@ -1,7 +1,14 @@
 .nav-container{
     margin-right: 30px;
-    }
+    position: fixed;
 
+    }
+    @media (max-width:800px) {
+        .nav-container{
+            margin-right: 5px;
+        }
+        
+    }
 .logo{
     color: white;
     margin-top: 20px;
@@ -109,6 +116,7 @@
     }
 
 }
+
 
 .new-tweet-button{
     background-color: #7856FF;
