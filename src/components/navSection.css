@@ -66,6 +66,9 @@
 .nav-button.explore{
     width: 150px;
 }
+.nav-button.search{
+    width: 150px;
+}
 .nav-button.messages{
     width: 170px;
 }
@@ -80,6 +83,16 @@
 }
 .nav-button.more{
     width: 130px;
+}
+@media (max-width: 1055px) {
+    .nav-button.explore{
+        display: none;
+    }
+}
+@media (min-width: 1055px) {
+    .nav-button.search{
+        display: none;
+    }
 }
 .icon{
     margin-left: 15px;

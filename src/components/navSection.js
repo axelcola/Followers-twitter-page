@@ -1,6 +1,7 @@
 import { BsTwitter } from "react-icons/bs";
 import { GoHome } from "react-icons/go";
 import { FiHash } from "react-icons/fi";
+import { FiSearch } from "react-icons/fi";
 import { RiNotification2Line } from "react-icons/ri";
 import { HiOutlineMail } from "react-icons/hi";
 import { FiBookmark } from "react-icons/fi";
@@ -28,6 +29,13 @@ const NavSection = () => {
       <div className="nav-button explore">
         <div className="icon">
           <FiHash size={23} />
+        </div>
+        <div className="box"></div>
+        <h1 className="button-text">Explore</h1>
+      </div>
+      <div className="nav-button search">
+        <div className="icon">
+          <FiSearch size={23} />
         </div>
         <div className="box"></div>
         <h1 className="button-text">Explore</h1>
