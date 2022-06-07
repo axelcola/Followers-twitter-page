@@ -15,11 +15,15 @@
   border-width: 1.3px;
   border-color: #38444d;
 }
-.search-section{
 
-}
 .nav-section{
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (max-width: 1300px) {
+
 }
 .list{
   margin-top: 110px;

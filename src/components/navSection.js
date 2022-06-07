@@ -7,10 +7,12 @@ import { FiBookmark } from "react-icons/fi";
 import { BsCardText } from "react-icons/bs";
 import { AiOutlineUser } from "react-icons/ai";
 import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
+import { GiFeather } from "react-icons/gi";
+import { BiPlus } from "react-icons/bi";
 import "./navSection.css";
 const NavSection = () => {
   return (
-    <div className="nav-section">
+    <div className="nav-container">
       <div className="logo">
         <div className="icon">
           <BsTwitter size={30} />
@@ -79,8 +81,16 @@ const NavSection = () => {
         <h1 className="button-text">More</h1>
       </div>
       <div>
-        <div className="new-tweet-button">
+        <div className="new-tweet-button large">
           <h1>Tweet</h1>
+        </div>
+        <div className="new-tweet-button small">
+          <div className="plus">
+            <BiPlus size={16} />
+          </div>
+          <div className="feather">
+            <GiFeather size={20} />
+          </div>
         </div>
       </div>
     </div>
