@@ -1,3 +1,14 @@
+.nav-container{
+    margin-right: 30px;
+    position: fixed;
+
+    }
+    @media (max-width:800px) {
+        .nav-container{
+            margin-right: 5px;
+        }
+        
+    }
 .logo{
     color: white;
     margin-top: 20px;
@@ -80,12 +91,33 @@
     font-size: 21px;
     margin-top: 10px;
 }
-.nav-section{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    cursor: pointer;
+@media (max-width: 1300px) {
+    .button-text{
+        display: none;
+    }    
+    .new-tweet-button.large{
+        display: none !important; 
+    }
+    .new-tweet-button.small{
+        display: block !important; 
+    }
+    .nav-button{
+        width: 50px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center
+        ;
+    }
+    .icon{
+        margin: auto;
+    }
+    .box{
+        width: 60px;
+    }
+
 }
+
+
 .new-tweet-button{
     background-color: #7856FF;
     color: white;
@@ -99,9 +131,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+.new-tweet-button.small{
+    position: relative;
+    width: 45px;
+    display: none;
 }
 .new-tweet-button:hover{
     background-color: #6c4de6;
     border: solid #6c4de6;
 
+}
+.plus{
+    position: absolute;
+    left: 8px;
+    bottom: 17px;
+}
+.feather{
+    position: absolute;
+    left: 16px;
+    top:13px;
+    transform: rotate(-3deg);
 }

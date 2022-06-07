@@ -10,7 +10,16 @@
     color: #677481;
     margin-left: 20px;
     margin-top: 7px;
+    
 }
+@media (max-width: 1170px) {
+    .Searcher{
+        min-width: 250px;
+        width: fit-content;
+    }
+    
+}
+
 .icon{
     margin: 20px;
 }
