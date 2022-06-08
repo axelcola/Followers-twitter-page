@@ -17,6 +17,10 @@
     font-size: 16px;
 
 }
+.follow.followers{
+    position: relative;
+
+}
 .follow:hover{ 
     background-color: #2d3741;
     transition: 0.2s;
@@ -25,10 +29,10 @@
 .selected{
     width: 85px;
     height: 5px;
-    position: relative;
-    bottom: -16px;
+    position: absolute;
     border-radius: 10px;
-    left: 113px;
+    bottom: 0px;
+    right: 37%;
 }
 .selected.ok{
     background-color: #7856ff;
@@ -90,4 +94,10 @@ p{
 .back-button:hover{
     background-color: #2d3741;
     transition: 0.2s;
+}
+@media (max-width:800px) {
+    .selected{
+    right: 33%;
+    }
+    
 }
