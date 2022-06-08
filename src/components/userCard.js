@@ -51,7 +51,9 @@ export default function UserCard(props) {
               @{props.first}
               {props.last}
             </p>
-            <h2>{props.description}</h2>
+            <div className="description">
+              <span>{props.description}</span>
+            </div>
           </div>
         </div>
         <div className="buttons">

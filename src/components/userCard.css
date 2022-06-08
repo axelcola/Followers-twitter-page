@@ -55,14 +55,14 @@
 
 }
 
-h2{
+.data span{
     font-size: 15px;
-    line-height: 4px;
+    line-height: 20px;
     color: #f7f9f9;
     font-weight: 500;
 
 }
-p{
+.data p{
     font-size: 15px;
     line-height: 4px;
     color:#8b98a5;
@@ -71,6 +71,9 @@ p{
     line-height: 1px;
     text-align: left;
     margin-left: 20px;
+}
+.description{
+    display: flex;
 }
 
 .dots{

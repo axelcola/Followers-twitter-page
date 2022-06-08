@@ -1,20 +1,23 @@
+import { useState } from "react";
 import "./follow-button.css";
 
 export default function FollowButton() {
+  const [state, setState] = useState("Following");
   const handleHover = () => {
-    return;
+    setState("Unfollow");
   };
-  const handleLeave = () => {};
+  const handleLeave = () => {
+    setState("Following");
+  };
+
   return (
     <>
-      <button className="follow-button unfollow">Unfollow</button>
-      <button className="follow-button llow">Follow</button>
       <button
-        className="follow-button llowing"
+        className={`follow-button ${state}`}
         onMouseOver={handleHover}
         onMouseLeave={handleLeave}
       >
-        Following
+        {state}
       </button>
     </>
   );

@@ -14,17 +14,17 @@
     transition: 0.2s;
 
 }
-.follow-button.llow{
+.follow-button.Follow{
     border: none;
 }
-.follow-button.unfollow{
+.follow-button.Unfollow{
     width: 90px;
     height: 30px;
     color: #f4212e;
     background-color: #322631;
     border:solid 1px #67070f;
 }
-.follow-button.llowing{
+.follow-button.Following{
     width: 90px;
     height: 30px;
     background-color: #15202b;
