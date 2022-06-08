@@ -46,8 +46,10 @@
   backdrop-filter: blur(10px);
   
 }
+
 @media (max-width:800px) {
   .head{
-    width: 486px;
+    
+    width: 512px;
   }
 }

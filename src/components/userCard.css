@@ -12,6 +12,7 @@
 @media (max-width:800px) {
     .user-card{
         width: fit-content;
+        justify-content: space-between;
     }
 }
 .user-card:hover{

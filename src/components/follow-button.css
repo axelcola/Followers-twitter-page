@@ -5,7 +5,6 @@
     font-size: 14px;
     font-weight: 700;
     color:#15202b ;
-    border: none;
     cursor: pointer;
     transition: 0.2s;
 
@@ -14,4 +13,21 @@
     background-color: #d7dbdc;
     transition: 0.2s;
 
+}
+.follow-button.llow{
+    border: none;
+}
+.follow-button.unfollow{
+    width: 90px;
+    height: 30px;
+    color: #f4212e;
+    background-color: #322631;
+    border:solid 1px #67070f;
+}
+.follow-button.llowing{
+    width: 90px;
+    height: 30px;
+    background-color: #15202b;
+    border:solid 1px #536471;
+    color: white;
 }
