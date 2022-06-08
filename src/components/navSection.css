@@ -145,15 +145,20 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: 0.2s;
+
 }
 .new-tweet-button.small{
     position: relative;
     width: 45px;
     display: none;
+    transition: 0.2s;
+
 }
 .new-tweet-button:hover{
     background-color: #6c4de6;
     border: solid #6c4de6;
+    transition: 0.2s;
 
 }
 .plus{
