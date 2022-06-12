@@ -21,6 +21,10 @@
     position: relative;
 
 }
+.follow.following{
+    position: relative;
+
+}
 .follow:hover{ 
     background-color: #2d3741;
     transition: 0.2s;

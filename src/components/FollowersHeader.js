@@ -1,7 +1,8 @@
-import "./Head.css";
+import "./FollowersHeader.css";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
+import { Link } from "wouter";
 
-const Head = () => {
+const Head = (props) => {
   return (
     <div className="head-box">
       <div className="user-back-box">
@@ -14,12 +15,16 @@ const Head = () => {
         </div>
       </div>
       <div className="switch-folow-list">
-        <button className="follow followers">
-          Followers<div className="selected ok"></div>
-        </button>
-        <button className="follow following">
-          Following <div className="selected"></div>
-        </button>
+        <Link to="/profile/followers">
+          <button className="follow followers">
+            Followers<div className="selected ok"></div>
+          </button>
+        </Link>
+        <Link to="/profile/following">
+          <button className="follow following">
+            Following <div className="selected ok"></div>
+          </button>
+        </Link>
       </div>
     </div>
   );

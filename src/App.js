@@ -1,7 +1,7 @@
 import "./App.css";
-import UserSection from "./components/userSection";
-import SearchSection from "./components/searchSection";
-import NavSection from "./components/navSection";
+import UserSection from "./components/Sections/userSection";
+import SearchSection from "./components/Sections/searchSection";
+import NavSection from "./components/Sections/navSection";
 
 function App() {
   return (
