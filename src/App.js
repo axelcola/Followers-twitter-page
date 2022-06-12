@@ -2,7 +2,6 @@ import "./App.css";
 import UserSection from "./components/Sections/userSection";
 import SearchSection from "./components/Sections/searchSection";
 import NavSection from "./components/Sections/navSection";
-
 function App() {
   return (
     <div className="App">

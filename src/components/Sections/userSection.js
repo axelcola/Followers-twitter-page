@@ -1,7 +1,7 @@
-import FollowersHeader from "../components/FollowersHeader";
-import UserList from "../components/userList";
+import FollowersHeader from "../FollowersHeader";
+import UserList from "../userList";
 
-export default function FollowingPage() {
+export default function UserSection() {
   return (
     <>
       <div className="head">

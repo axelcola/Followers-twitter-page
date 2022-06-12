@@ -17,7 +17,7 @@ const Head = (props) => {
       <div className="switch-folow-list">
         <Link to="/profile/followers">
           <button className="follow followers">
-            Followers<div className="selected ok"></div>
+            Followers<div className="selected "></div>
           </button>
         </Link>
         <Link to="/profile/following">
