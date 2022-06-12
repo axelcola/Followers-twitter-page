@@ -2,6 +2,7 @@ import "./App.css";
 import UserSection from "./components/Sections/userSection";
 import SearchSection from "./components/Sections/searchSection";
 import NavSection from "./components/Sections/navSection";
+import Home from "./Home";
 function App() {
   return (
     <div className="App">
@@ -9,7 +10,7 @@ function App() {
         <NavSection />
       </div>
       <div className="users-section">
-        <UserSection />
+        <Home />
       </div>
       <div className="search-section">
         <SearchSection />

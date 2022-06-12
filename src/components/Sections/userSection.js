@@ -7,7 +7,7 @@ export default function UserSection() {
       <div className="head">
         <FollowersHeader />
       </div>
-      <div className="list">
+      <div className="list follow-section">
         <UserList />
       </div>
     </>
