@@ -8,15 +8,18 @@ import { MdSchedule } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsPlus } from "react-icons/bs";
 import { useState } from "react";
+import CircleProgress from "./CircleProgress";
 
 export default function NewTweetHeader() {
   const [focus, setFocus] = useState(false);
-  const characterCounter = () => {
+  const [count, setCount] = useState(250);
+  const characterCounter = (e) => {
     if (document.activeElement.value) {
       setFocus(true);
     } else {
       setFocus(false);
     }
+    setCount(280 - e.target.value.length);
   };
   return (
     <>
@@ -61,7 +64,9 @@ export default function NewTweetHeader() {
               {focus ? (
                 <>
                   <div className="character-container">
-                    <div className="character-counter"></div>
+                    <CircleProgress />
+                    {/* <div className="character-counter"></div> */}
+                    {count}
                   </div>
                   <div className="plus-icon">
                     <BsPlus size={25} />

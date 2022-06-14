@@ -1,0 +1,42 @@
+.circle-box{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #15202b;
+    transform: rotate(-90deg);
+}
+.circle-box .percent {
+    position: relative;
+    width:30px;
+    height:30px;
+}
+.circle-box .percent svg{
+    position: relative;
+    width:30px;
+    height:30px;
+}
+.circle-box .percent svg circle{
+    width:30px;
+    height:30px;
+    fill: none;
+    stroke-width: 2;
+    stroke: #000;
+    transform: translate(1px,1px);
+    stroke-dasharray: 63;
+    stroke-dashoffset: 63;
+}
+
+.circle-box .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke:#15202b
+
+}
+.circle-box .percent svg circle:nth-child(2){
+    stroke:#03a9f4;
+    stroke-dashoffset: calc(63 - (63 * 3) / 100);
+
+}
