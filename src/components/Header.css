@@ -39,7 +39,7 @@
     right: 37%;
 }
 .selected.ok{
-    background-color: #7856ff;
+    background-color: var(--global-color);
 
 }
 h2{

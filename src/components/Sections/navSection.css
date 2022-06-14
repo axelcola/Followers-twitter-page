@@ -132,14 +132,14 @@
 
 
 .new-tweet-button{
-    background-color: #7856FF;
+    background-color: var(--global-color);
     color: white;
     width: 210px;
     font-weight: 500;
     font-size: 9px;
     height: 45px;
     margin-top: 20px;
-    border: solid #7856FF;
+    border: solid var(--global-color);
     border-radius: 50px;
     display: flex;
     justify-content: center;

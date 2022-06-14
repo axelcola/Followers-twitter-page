@@ -7,12 +7,19 @@ import { HiOutlineEmojiHappy } from "react-icons/hi";
 import { MdSchedule } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsPlus } from "react-icons/bs";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 import CircleProgress from "./CircleProgress";
 
 export default function NewTweetHeader() {
   const [focus, setFocus] = useState(false);
-  const [count, setCount] = useState(250);
+  const [count, setCount] = useState(280);
+  useEffect(() => {
+    const percent = getComputedStyle(document.documentElement).getPropertyValue(
+      "--percent"
+    );
+    console.log(percent);
+  });
   const characterCounter = (e) => {
     if (document.activeElement.value) {
       setFocus(true);
@@ -20,6 +27,10 @@ export default function NewTweetHeader() {
       setFocus(false);
     }
     setCount(280 - e.target.value.length);
+    document.documentElement.style.setProperty(
+      "--percent",
+      (count * 100) / 280
+    );
   };
   return (
     <>
@@ -65,8 +76,6 @@ export default function NewTweetHeader() {
                 <>
                   <div className="character-container">
                     <CircleProgress />
-                    {/* <div className="character-counter"></div> */}
-                    {count}
                   </div>
                   <div className="plus-icon">
                     <BsPlus size={25} />
