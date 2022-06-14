@@ -16,7 +16,8 @@
     align-items: flex-start;
 }
 .new-twit-input{
-    width: 80%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen';
+    width: 89%;
     height: 52px;
     border: none;
     background-color: #15202B;
@@ -25,6 +26,8 @@
     font-weight: 400;
     margin-top: 10px;
     padding-left: 10px;
+    resize: none;
+
 }
 .new-twit-input:focus{
     outline: none;

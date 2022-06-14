@@ -7,19 +7,14 @@ import { HiOutlineEmojiHappy } from "react-icons/hi";
 import { MdSchedule } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsPlus } from "react-icons/bs";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import CircleProgress from "./CircleProgress";
+import TextareaAutosize from "react-autosize-textarea/lib";
 
 export default function NewTweetHeader() {
   const [focus, setFocus] = useState(false);
   const [count, setCount] = useState(280);
-  useEffect(() => {
-    const percent = getComputedStyle(document.documentElement).getPropertyValue(
-      "--percent"
-    );
-    console.log(percent);
-  });
   const characterCounter = (e) => {
     if (document.activeElement.value) {
       setFocus(true);
@@ -39,7 +34,7 @@ export default function NewTweetHeader() {
           <img src={img} alt="user-img" className="user-photo "></img>
         </div>
         <div className="new-twit-input-box">
-          <input
+          <TextareaAutosize
             type="text"
             id="new-twit"
             onChange={characterCounter}

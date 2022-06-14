@@ -38,9 +38,6 @@
 .list.follow-section{
   margin-top: 110px;
 }
-.list.home{
-  margin-top: 50px;
-}
 .head{
   position: fixed;
   width: 640px;
@@ -48,10 +45,8 @@
   backdrop-filter: blur(10px);
   
 }
-
 @media (max-width:800px) {
   .head{
-    
     width: 573px;
   }
 }
