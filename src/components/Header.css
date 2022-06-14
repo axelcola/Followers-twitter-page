@@ -79,6 +79,13 @@ p{
     align-items: center;
     height: 60px;
 }
+.user-back-box.stars{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
 .back-button{
     height: 40px;
     width: 40px;

@@ -1,17 +1,17 @@
-import "./FollowersHeader.css";
+import "./Header.css";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
+import { BsStars } from "react-icons/bs";
 
 const HomeHeader = (props) => {
   return (
     <div className="head-box">
-      <div className="user-back-box">
-        <button className="back-button">
-          <HiOutlineArrowSmLeft size={23} />
-        </button>
+      <div className="user-back-box stars">
         <div className="user">
-          <h1 className="name">Aacsel</h1>
-          <p className="user-name">@Aacsell</p>
+          <h1 className="name">Home</h1>
         </div>
+        <button className="back-button">
+          <BsStars size={23} />
+        </button>
       </div>
     </div>
   );

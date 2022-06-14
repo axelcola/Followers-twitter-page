@@ -28,6 +28,14 @@
     transition: 0.2s;
 
 }
+.user-photo.small{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.2s;
+
+}
 .user-photo.medium{
     width: 74px;
     height: 74px;

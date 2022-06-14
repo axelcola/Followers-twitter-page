@@ -1,4 +1,4 @@
-import "./FollowersHeader.css";
+import "./Header.css";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
 import { Link } from "wouter";
 
