@@ -5,6 +5,7 @@ const UserList = () => {
 
   return list.map((item) => (
     <UserCard
+      key={item.name.first + item.name.last}
       img={item.picture.medium}
       first={item.name.first}
       last={item.name.last}

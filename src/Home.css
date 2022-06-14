@@ -41,6 +41,10 @@
     font-size: 15px;
     font-weight: 700;
 }
+.privacy-selector h4{
+    margin-left: 3px;
+    cursor: pointer;
+}
 .attach-selector{
     display: flex;
 
@@ -67,6 +71,10 @@
     font-weight: 500;
     margin-right: 20px;
     cursor: pointer;
+}
+.add-tweet.disabled{
+    cursor: none;
+    opacity: 0.5;
 }
 .plus-icon{
     color: #7856ff;
