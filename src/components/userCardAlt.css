@@ -20,14 +20,14 @@
     display: flex;
     align-items: center;
 }
-h2{
+.user-card h2{
     font-size: 15px;
     line-height: 4px;
     color: #f7f9f9;
     font-weight: 500;
 
 }
-p{
+.user-card p{
     font-size: 15px;
     line-height: 4px;
     color:#8b98a5;

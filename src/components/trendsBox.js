@@ -62,6 +62,7 @@ const TrendBox = () => {
           </div>
           {trends.map((trend) => (
             <SingleTrend
+              key={trend.name}
               name={trend.name}
               category={trend.category}
               tweets={trend.tweets}

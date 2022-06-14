@@ -1,6 +1,6 @@
 .new-twit{
     width: 100%;
-    height: 120px;
+    height: auto;
     margin-top: 60px;
     display: flex;
     border-bottom: solid 1.5px #38444d;
@@ -23,16 +23,23 @@
     color: aliceblue;
     font-size: 20px;
     font-weight: 400;
-
+    margin-top: 10px;
+    padding-left: 10px;
 }
 .new-twit-input:focus{
     outline: none;
 }
 .privacy-selector{
     height: 37px;
+    width: 94%;
     display: flex;
     align-items: center;
     color: #7856ff;
+    border-bottom: solid 1.5px #38444d;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 700;
 }
 .attach-selector{
     display: flex;
@@ -41,7 +48,7 @@
 .new-twit-buttons{
     display: flex;
     width: 100%;
-    height: 80px;
+    height: 60px;
     justify-content: space-between;
     align-items: center;
 
@@ -61,8 +68,35 @@
     margin-right: 20px;
     cursor: pointer;
 }
-.new-twit-container #plus-icon{
+.plus-icon{
     color: #7856ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 15px;
+    border: solid 1px #38444d;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.new-tweet-container {
+    display: flex;
+    align-items: center;
+    /* border-left: solid 2px #38444d; */
+}
+.character-counter{
+    height: 16px;
+    width: 16px;
+    border: solid 2px #38444d;
+    border-radius: 50%;
+}
+.character-container{
+    border-right: solid 2px #38444d;
+    width: 50px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .new-tweet-button.card{
     width: 75px;
@@ -71,7 +105,7 @@
     font-size: 15px;
 }
 .attach-icon{
-    margin-left: 20px;
+    margin-left: 15px;
     cursor: pointer;
 }
 .attach-icon.galery{
