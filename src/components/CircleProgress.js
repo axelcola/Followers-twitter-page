@@ -3,7 +3,7 @@ export default function CircleProgress() {
   return (
     <div className="circle-box">
       <div className="percent">
-        <svg>
+        <svg className="svg">
           <circle cx="10" cy="10" r="10"></circle>
           <circle cx="10" cy="10" r="10"></circle>
         </svg>

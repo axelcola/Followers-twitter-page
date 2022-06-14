@@ -14,6 +14,11 @@
     width:30px;
     height:30px;
 }
+.svg{
+    left: 2px;
+    display: flex;
+    position: absolute;
+}
 .circle-box .percent svg{
     position: relative;
     width:30px;
@@ -36,7 +41,7 @@
     
 }
 .circle-box .percent svg circle:nth-child(2){
-    stroke:#03a9f4;
+    stroke:var(--global-color);
     stroke-dashoffset: calc(63 + (63 * var(--percent)) / 100);
 
 }
