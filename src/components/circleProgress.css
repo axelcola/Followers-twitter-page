@@ -9,18 +9,22 @@
     background-color: #15202b;
     transform: rotate(-90deg);
 }
+.number-counter{
+    top: 3px;
+    right: -21px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
 .circle-box .percent {
-    position: relative;
     width:30px;
     height:30px;
 }
 .svg{
     left: 2px;
     display: flex;
-    position: absolute;
 }
 .circle-box .percent svg{
-    position: relative;
     width:30px;
     height:30px;
 }
@@ -31,21 +35,25 @@
     stroke-width: 2;
     stroke: #000;
     transform: translate(1px,1px);
-    stroke-dasharray: 63;
-    stroke-dashoffset: 63;
+    stroke-dasharray: var(--size);
+    stroke-dashoffset: var(--size);
 }
 
 .circle-box .percent svg circle:nth-child(1){
     stroke-dashoffset: 0;
     stroke: #38434d;
+    transition: 0.2s;
     
 }
 .circle-box .percent svg circle:nth-child(2){
     stroke:var(--color);
-    stroke-dashoffset: calc(63 - (63 * var(--percent)) / 100);
+    stroke-dashoffset: calc(var(--size) - (var(--size) * var(--percent)) / 100);
+    transition: 0.2s;
 
 }
 :root {
     --percent: 100;
-    --color:var(--global-color):
+    --color:var(--global-color);
+    --size: 63;
+    /* small = 63 large = 76 */
   }

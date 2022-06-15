@@ -15,22 +15,31 @@ import TextareaAutosize from "react-autosize-textarea/lib";
 export default function NewTweetHeader() {
   const [focus, setFocus] = useState(false);
   const [count, setCount] = useState(280);
+  const [size, setSize] = useState(10);
+
   const characterCounter = (e) => {
+    setCount(280 - e.target.value.length);
+    console.log(count);
     if (document.activeElement.value) {
       setFocus(true);
     } else {
       setFocus(false);
     }
-    if (count > 20) {
+    if (count > 21) {
+      setSize(11);
       document.documentElement.style.setProperty(
         "--color",
         "var(--global-color)"
       );
+      document.documentElement.style.setProperty("--size", "69");
+    } else if (count > 0) {
+      setSize(14);
       console.log(count);
-    } else {
       document.documentElement.style.setProperty("--color", "#fed300");
+      document.documentElement.style.setProperty("--size", "88");
+    } else {
+      document.documentElement.style.setProperty("--color", "#f0212e");
     }
-    setCount(280 - e.target.value.length);
     document.documentElement.style.setProperty(
       "--percent",
       100 - (count * 100) / 280
@@ -78,8 +87,15 @@ export default function NewTweetHeader() {
             <div className="new-tweet-container">
               {focus ? (
                 <>
+                  {count <= 9 ? (
+                    <div className="number-counter-single">{count}</div>
+                  ) : count <= 20 ? (
+                    <div className="number-counter">{count}</div>
+                  ) : (
+                    <></>
+                  )}
                   <div className="character-container">
-                    <CircleProgress count={count} />
+                    <CircleProgress size={size} count={count} />
                   </div>
                   <div className="plus-icon">
                     <BsPlus size={25} />
