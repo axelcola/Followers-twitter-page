@@ -1,5 +1,5 @@
 import "./circleProgress.css";
-export default function CircleProgress() {
+export default function CircleProgress(props) {
   return (
     <div className="circle-box">
       <div className="percent">

@@ -79,7 +79,7 @@ export default function NewTweetHeader() {
               {focus ? (
                 <>
                   <div className="character-container">
-                    <CircleProgress />
+                    <CircleProgress count={count} />
                   </div>
                   <div className="plus-icon">
                     <BsPlus size={25} />
