@@ -41,10 +41,11 @@
     
 }
 .circle-box .percent svg circle:nth-child(2){
-    stroke:var(--global-color);
-    stroke-dashoffset: calc(63 + (63 * var(--percent)) / 100);
+    stroke:var(--color);
+    stroke-dashoffset: calc(63 - (63 * var(--percent)) / 100);
 
 }
 :root {
     --percent: 100;
+    --color:var(--global-color):
   }

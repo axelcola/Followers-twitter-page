@@ -21,10 +21,19 @@ export default function NewTweetHeader() {
     } else {
       setFocus(false);
     }
+    if (count > 20) {
+      document.documentElement.style.setProperty(
+        "--color",
+        "var(--global-color)"
+      );
+      console.log(count);
+    } else {
+      document.documentElement.style.setProperty("--color", "#fed300");
+    }
     setCount(280 - e.target.value.length);
     document.documentElement.style.setProperty(
       "--percent",
-      (count * 100) / 280
+      100 - (count * 100) / 280
     );
   };
   return (
