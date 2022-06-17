@@ -21,20 +21,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 33px;
+    left: 31px;
     top:-3px;
     text-align: center;
+    font-size: 13px;
 }
-.number-counter-single{
-    position: relative;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.number-counter.single{
     text-align: center;
-    right: -29px;
+    left: 28px;
     bottom: 3px;
     z-index: 10;
+
+}
+.number-counter.negative-count{
+    color: #f4212e;
+    font-weight: 500;
+    z-index: 10;
+    left: 30px
 }
 
 .new-twit-input{
