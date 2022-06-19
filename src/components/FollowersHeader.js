@@ -1,8 +1,18 @@
 import "./Header.css";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
 import { Link } from "wouter";
+import { useState } from "react";
 
 const Head = (props) => {
+  const [list, setList] = useState(true);
+  const followList = () => {
+    setList(false);
+    console.log(list);
+  };
+  const followingList = () => {
+    setList(true);
+    console.log(list);
+  };
   return (
     <div className="head-box">
       <div className="user-back-box">
@@ -15,14 +25,16 @@ const Head = (props) => {
         </div>
       </div>
       <div className="switch-folow-list">
-        <Link to="/profile/followers">
+        <Link to="/profile/followers" onClick={followList}>
           <button className="follow followers">
-            Followers<div className="selected "></div>
+            Followers
+            {list ? <></> : <div className="selected ok"></div>}
           </button>
         </Link>
-        <Link to="/profile/following">
+        <Link to="/profile/following" onClick={followingList}>
           <button className="follow following">
-            Following <div className="selected ok"></div>
+            Following
+            {list ? <div className="selected ok"></div> : <></>}
           </button>
         </Link>
       </div>
