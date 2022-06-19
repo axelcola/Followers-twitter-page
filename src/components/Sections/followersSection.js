@@ -1,7 +1,7 @@
 import FollowersHeader from "../FollowersHeader";
 import UserList from "../userList";
 
-export default function UserSection() {
+export default function FollowersSection() {
   return (
     <>
       <div className="head">
