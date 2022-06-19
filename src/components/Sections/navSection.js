@@ -11,6 +11,7 @@ import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
 import { GiFeather } from "react-icons/gi";
 import { BiPlus } from "react-icons/bi";
 import "./navSection.css";
+import { Link } from "wouter";
 const NavSection = () => {
   return (
     <div className="nav-container">
@@ -19,13 +20,15 @@ const NavSection = () => {
           <BsTwitter size={30} />
         </div>
       </div>
-      <div className="nav-button home">
-        <div className="icon">
-          <GoHome size={23} />
+      <Link to="/home">
+        <div className="nav-button home">
+          <div className="icon">
+            <GoHome size={23} />
+          </div>
+          <div className="box"></div>
+          <h1 className="button-text">Home</h1>
         </div>
-        <div className="box"></div>
-        <h1 className="button-text">Home</h1>
-      </div>
+      </Link>
       <div className="nav-button explore">
         <div className="icon">
           <FiHash size={23} />
@@ -72,14 +75,16 @@ const NavSection = () => {
 
         <h1 className="button-text">Lists</h1>
       </div>
-      <div className="nav-button profile">
-        <div className="icon">
-          <AiOutlineUser size={23} />
-        </div>
-        <div className="box"></div>
+      <Link to="/profile/followers">
+        <div className="nav-button profile">
+          <div className="icon">
+            <AiOutlineUser size={23} />
+          </div>
+          <div className="box"></div>
 
-        <h1 className="button-text">Profile</h1>
-      </div>
+          <h1 className="button-text">Profile</h1>
+        </div>
+      </Link>
       <div className="nav-button profile">
         <div className="icon">
           <HiOutlineDotsCircleHorizontal size={23} />
