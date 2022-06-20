@@ -87,7 +87,11 @@ export default function NewTweetHeader() {
             <div className="new-tweet-container">
               {focus ? (
                 <>
-                  {(count <= 20 && count > 9) || count < 0 ? (
+                  {count < 0 ? (
+                    <div className="number-counter negative-count">{count}</div>
+                  ) : count <= 9 ? (
+                    <div className="number-counter single">{count}</div>
+                  ) : count <= 20 && count > 9 ? (
                     <div className="number-counter">{count}</div>
                   ) : count <= 9 ? (
                     <div className="number-counter-single">{count}</div>
@@ -95,7 +99,11 @@ export default function NewTweetHeader() {
                     <></>
                   )}
                   <div className="character-container">
-                    <CircleProgress size={size} count={count} />
+                    {count < -9 ? (
+                      <></>
+                    ) : (
+                      <CircleProgress size={size} count={count} />
+                    )}
                   </div>
                   <div className="plus-icon">
                     <BsPlus size={25} />
