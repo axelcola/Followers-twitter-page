@@ -21,6 +21,7 @@ function App() {
             component={FollowersSection}
           />
           <Route path="/Followers-twitter-page/home" component={Home} />
+          <Route path="/Followers-twitter-page" component={Home} />
         </Switch>
       </div>
       <div className="search-section">
