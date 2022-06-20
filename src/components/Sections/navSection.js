@@ -20,7 +20,7 @@ const NavSection = () => {
           <BsTwitter size={30} />
         </div>
       </div>
-      <Link to="/home">
+      <Link to="/Followers-twitter-page/home">
         <div className="nav-button home">
           <div className="icon">
             <GoHome size={23} />
@@ -75,7 +75,7 @@ const NavSection = () => {
 
         <h1 className="button-text">Lists</h1>
       </div>
-      <Link to="/profile/followers">
+      <Link to="/Followers-twitter-page/profile/followers">
         <div className="nav-button profile">
           <div className="icon">
             <AiOutlineUser size={23} />

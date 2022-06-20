@@ -25,13 +25,19 @@ const Head = (props) => {
         </div>
       </div>
       <div className="switch-folow-list">
-        <Link to="/profile/followers" onClick={followList}>
+        <Link
+          to="/Followers-twitter-page/profile/followers"
+          onClick={followList}
+        >
           <button className="follow followers">
             Followers
             {list ? <></> : <div className="selected ok"></div>}
           </button>
         </Link>
-        <Link to="/profile/following" onClick={followingList}>
+        <Link
+          to="/Followers-twitter-page/profile/following"
+          onClick={followingList}
+        >
           <button className="follow following">
             Following
             {list ? <div className="selected ok"></div> : <></>}

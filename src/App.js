@@ -12,9 +12,15 @@ function App() {
       </div>
       <div className="users-section">
         <Switch>
-          <Route path="/profile/followers" component={FollowersSection} />
-          <Route path="/profile/following" component={FollowersSection} />
-          <Route path="/home" component={Home} />
+          <Route
+            path="/Followers-twitter-page/profile/followers"
+            component={FollowersSection}
+          />
+          <Route
+            path="/Followers-twitter-page/profile/following"
+            component={FollowersSection}
+          />
+          <Route path="/Followers-twitter-page/home" component={Home} />
         </Switch>
       </div>
       <div className="search-section">
